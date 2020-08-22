@@ -1,15 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-		<form method="POST" action="login">
-		<h4>usu�rio:<input type="text" name="txtusuario"/></h4>
-		<h4>senha:<input type="password" name="txtsenha"/></h4>
-		<input type="submit" value="Entrar"></form>
-		
-	
-</body>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://www.rondomotos.com.br/images/favicons/favicon-honda-2w.ico">
+
+    <title>Rondomotos - App V1.</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="https://getbootstrap.com.br/docs/4.1/examples/floating-labels/floating-labels.css" rel="stylesheet">
+     
+ 
+
+  </head>
+  <body>
+  
+  			  	<div class="container"> 
+  			  
+				    <form class="form-signin" method="POST" action="login"> 
+				      <div class="text-center mb-4">
+				        <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> 
+				        <h1 class="h3 mb-3 font-weight-normal">Rondo Motos - App v1</h1> 
+				        <p>Solicitar acesso atraves do email. ti@rondsdomotos.com.br</p> 
+				      </div>
+				
+				      <div class="form-label-group"> 
+				        <input type="text" id="inputTxt" class="form-control" placeholder="informe o usuário" required autofocus name="txtusuario"> 
+				        <label for="inputTxt">Usuário</label> 
+				      </div> 
+				
+				      <div class="form-label-group"> 
+				        <input type="password" id="inputPassword" class="form-control" placeholder="informe a senha" required name="txtsenha"> 
+				        <label for="inputPassword">Senha</label> 
+				      </div>
+				 
+				      <div class="checkbox mb-3"> 
+				        <label><input type="checkbox" value="lembrar de mim"> Lembrar de mim</label> 
+				      </div>
+				      <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button> 
+				      <p class="mt-5 mb-3 text-muted text-center">&copy; Rondo Motos - Garantia Absoluta</p> 
+				    </form> 
+				    </div>
+				  </body>
+
+  
 </html>

@@ -1,7 +1,7 @@
 package br.com.rondomotos;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+//import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -28,14 +28,14 @@ public class login extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		PrintWriter out = resp.getWriter();
+		resp.setContentType("text/html");
+
+
 		if (consultaUsuario(req.getParameter("txtusuario"), req.getParameter("txtsenha"))) {
-			RequestDispatcher rd = req.getRequestDispatcher("Cnh");
+			RequestDispatcher rd = req.getRequestDispatcher("painelAdm");
 			rd.forward(req, resp);
 		} else {
-			out.print("Usuário ou Senha Error!");
-			RequestDispatcher rd = req.getRequestDispatcher("index.html");
-			rd.include(req, resp);
+
 		}
 
 	}

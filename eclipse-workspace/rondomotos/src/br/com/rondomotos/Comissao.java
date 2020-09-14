@@ -145,10 +145,6 @@ public class Comissao extends HttpServlet {
 			out.println("</div>");
 			out.println("</div>");
 
-			
-			
-			
-			
 			out.println("<div class=\"shadow-none p-3 mb-5 bg-light rounded\">");
 			out.println("<div class=\"form-group\">");
 			out.println("<h1 class=\"display-8\">Comissão vendas Motocicletas 0KM!</h1>");
@@ -291,8 +287,6 @@ public class Comissao extends HttpServlet {
 
 			out.println("<div class=\"container\">");
 
-			
-
 			/*-------------Cabeçalho------------------*/
 
 			out.println("<div class=\"media\">");
@@ -306,17 +300,13 @@ public class Comissao extends HttpServlet {
 			out.println("<div class=\"alert alert-light\" role=\"alert\">");
 			out.println("<blockquote class=\"blockquote\">");
 			out.println("<p class=\"mb-0\">");
-			out.println("<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
+			out.println(
+					"<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
 			out.println("</p>");
 			out.println("</blockquote>");
-			
+
 			out.println("</div>");
-			
-			
-			
-			
-			
-			
+
 			out.println("<div class=\"shadow-none p-3 mb-5 bg-light rounded\">");
 			out.println("<div class=\"form-group\">");
 			out.println("<h1 class=\"display-8\">Realizar as etapas para upload do arquivo de PROPOSTA!</h1>");
@@ -452,17 +442,13 @@ public class Comissao extends HttpServlet {
 			out.println("<div class=\"alert alert-light\" role=\"alert\">");
 			out.println("<blockquote class=\"blockquote\">");
 			out.println("<p class=\"mb-0\">");
-			out.println("<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
+			out.println(
+					"<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
 			out.println("</p>");
 			out.println("</blockquote>");
-			
+
 			out.println("</div>");
-			
-			
-			
-			
-			
-			
+
 			out.println("<div class=\"shadow-none p-3 mb-5 bg-light rounded\">");
 			out.println("<div class=\"form-group\">");
 			out.println("<h1 class=\"display-8\">Selecionar apenas os vendedores INTERNOS!</h1>");
@@ -555,29 +541,22 @@ public class Comissao extends HttpServlet {
 			out.println("</div>");
 			out.println("</div>");
 
-			
-			
 			out.println("<div class=\"alert alert-light\" role=\"alert\">");
 			out.println("<blockquote class=\"blockquote\">");
 			out.println("<p class=\"mb-0\">");
-			out.println("<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
+			out.println(
+					"<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
 			out.println("</p>");
 			out.println("</blockquote>");
-			
+
 			out.println("</div>");
-			
-			
-			
-			
-			
-			
+
 			out.println("<div class=\"shadow-none p-3 mb-5 bg-light rounded\">");
 			out.println("<div class=\"form-group\">");
 			out.println("<h1 class=\"display-8\">Selecionar Apenas Veículos de Alta CC!</h1>");
 			out.println("</div>");
 			out.println("</div>");
-			
-			
+
 			/*--------------Tabela--------------------------------*/
 
 			Object[] st = arrayModelos.toArray();
@@ -664,23 +643,16 @@ public class Comissao extends HttpServlet {
 			out.println("</div>");
 			out.println("</div>");
 
-			
-			
-			
 			out.println("<div class=\"alert alert-light\" role=\"alert\">");
 			out.println("<blockquote class=\"blockquote\">");
 			out.println("<p class=\"mb-0\">");
-			out.println("<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
+			out.println(
+					"<button type=\"button\" onClick=\"window.location.href='/rondomotos/comissao'\" class=\"btn btn-primary\">Voltar</button>");
 			out.println("</p>");
 			out.println("</blockquote>");
-			
+
 			out.println("</div>");
-			
-			
-			
-			
-			
-			
+
 			out.println("<div class=\"shadow-none p-3 mb-5 bg-light rounded\">");
 			out.println("<div class=\"form-group\">");
 			out.println("<h1 class=\"display-8\">Comissão Finalizada!</h1>");
@@ -692,19 +664,18 @@ public class Comissao extends HttpServlet {
 			// out.println("<div class=\"shadow p-3 mb-5 bg-white rounded\">");
 
 			for (String lh : escreverComissaoDuplicada.cidade) {
-				
+
 				out.println("<div class=\"alert alert-info\" role=\"alert\">");
 				out.println("<blockquote class=\"blockquote text-center\">");
 				out.println("<p class=\"mb-0\">");
 				out.println(lh);
 				out.println("</p>");
 				out.println("</blockquote>");
-				
+
 				out.println("</div>");
-				
-				
-				out.println("<table class=\"table-bordered-hover\">");
-				out.println("<thead>");
+
+				out.println("<table class=\"table-sm\">");
+				out.println("<thead >");
 				out.println("<tr>");
 				out.println("<th scope=\"col\">Proposta</th>");
 				out.println("<th scope=\"col\">Cliente</th>");
@@ -715,7 +686,7 @@ public class Comissao extends HttpServlet {
 				out.println("<th class=\"text-center\" scope=\"col\">%</th>");
 				out.println("<th class=\"text-center\" scope=\"col\">Comissão</th>");
 				out.println("<th class=\"text-center\" scope=\"col\">Margem</th>");
-				out.println("<th class=\"text-center\" scope=\"col\">Total</th>");
+				//out.println("<th class=\"text-center\" scope=\"col\">Total</th>");
 
 				out.println("</tr>");
 				out.println("</thead>");
@@ -723,41 +694,60 @@ public class Comissao extends HttpServlet {
 
 				DecimalFormat df = new DecimalFormat("###,##0.00");
 
-				
-				
-				for (String propostas : escreverComissaoDuplicada.finalizado) {
+				for (String propostas : escreverComissaoDuplicada.finalizadoOk) {
 					String[] linha = propostas.split(";");
-					if(lh.contentEquals(linha[9])) {
-						
-						out.println("<tr>");
-						out.println("<td scope=\"col\">" + linha[0] + "</td>");
-						out.println("<td scope=\"col\">" + linha[1] + "</td>");
-						out.println("<td scope=\"col\">" + linha[3] + "</td>");
-						out.println("<td scope=\"col\">" + linha[4] + "</td>");
-						Double db = Double.parseDouble(linha[5]);
-						out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db) + "</td>");
-						Double db1 = Double.parseDouble(linha[6]);
-						out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db1) + "</td>");
-						Double db2 = Double.parseDouble(linha[7]);
-						out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db2 - 100) + "</td>");
-						out.println("<td class=\"text-center\" scope=\"col\">" + linha[8] + "</td>");
-						Double db3 = Double.parseDouble(linha[10]);
-						out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db3) + "</td>");
-						Double db4 = Double.parseDouble(linha[11]);
-						out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db4) + "</td>");
-						out.println("</tr>");
-						
+					if (lh.contentEquals(linha[9])) {
+
+						if (!linha[0].contentEquals("0000")) {
+							
+							out.println("<tr size=\"2\">");
+							out.println("<td scope=\"col\">" + linha[0] + "</td>");
+							out.println("<td scope=\"col\">" + linha[1] + "</td>");
+							out.println("<td scope=\"col\">" + linha[3] + "</td>");
+							out.println("<td scope=\"col\">" + linha[4] + "</td>");
+							Double db = Double.parseDouble(linha[5]);
+							out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db) + "</td>");
+							Double db1 = Double.parseDouble(linha[6]);
+							out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db1) + "</td>");
+							Double db2 = Double.parseDouble(linha[7]);
+							out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db2 - 100) + "</td>");
+							out.println("<td class=\"text-center\" scope=\"col\">" + linha[8] + "</td>");
+							Double db3 = Double.parseDouble(linha[10]);
+							out.println("<td class=\"text-center\" scope=\"col\">" + df.format(db3) + "</td>");
+
+							out.println("</tr>");
+							out.println("</thead>");
+							
+						}
+						else {
+							
+							out.println("<thead >");
+							out.println("<tr>");
+							out.println("<th scope=\"col\"></th>");
+							out.println("<th scope=\"col\"></th>");
+							out.println("<th scope=\"col\"></th>");
+							out.println("<th scope=\"col\"></th>");
+							out.println("<th scope=\"col\"></th>");
+							out.println("<th scope=\"col\"></th>");
+							out.println("<th scope=\"col\"></th>");
+							Double db4 = Double.parseDouble(linha[8]);
+							out.println("<th scope=\"row\"><h6>R$: " + df.format(db4) + "</h6></th>");
+							out.println("<th scope=\"col\"></th>");
+
+
+							out.println("</tr>");
+							out.println("</thead>");
+							
+							
+						}
 					}
 				}
 
-				
 				out.println("</tbody>");
 				out.println("</table>");
-				
-				
+
 			}
 
-	
 			out.println("</div>");
 
 			out.println("</body>");
@@ -769,4 +759,3 @@ public class Comissao extends HttpServlet {
 	}
 
 }
-

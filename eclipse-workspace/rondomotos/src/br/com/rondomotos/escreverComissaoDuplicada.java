@@ -7,12 +7,14 @@ public class escreverComissaoDuplicada {
 	public static ArrayList<String> finalizado = null;
 	public static ArrayList<String> cidade = null;
 	public static ArrayList<String> finalizadoOk = null;
+	public static ArrayList<String> finalizadoTotal = null;
 
 	public static void escrever() {
 
 		finalizado = new ArrayList<String>();
 		finalizadoOk = new ArrayList<String>();
 		cidade = new ArrayList<String>();
+		finalizadoTotal = new ArrayList<String>();
 
 		Object[] st = ComissaoFinal.comissaoDuplicada.toArray();
 		for (Object s : st) {
@@ -56,18 +58,17 @@ public class escreverComissaoDuplicada {
 				if (linhaSplit[0].contentEquals(lhSplit[4])) {
 					db = Double.parseDouble(lhSplit[8].replaceAll(",", "."));
 
-				
-
 					db1 = db1 + db;
 					finalizadoOk.add(lh + ";" + db1);
-					
+
 				}
 
 			}
-
+			finalizadoTotal.add(linha + ";" + db1);
+			
 		}
-		
-		finalizado =  new ArrayList<String>();
+
+		finalizado = new ArrayList<String>();
 		for (String linha : cidade) {
 			for (String lh : finalizadoOk) {
 				String[] lhSplit = lh.split(";");
@@ -79,6 +80,25 @@ public class escreverComissaoDuplicada {
 			}
 
 		}
+
+		finalizadoOk = new ArrayList<String>();
+		
+		String cidade = null;
+		for (String lh : finalizadoTotal) {
+			String[] lhSplit = lh.split(";");
+			for (String linha : finalizado) {
+				String[] linhaSplit = linha.split(";");
+				
+				if(lhSplit[0].contentEquals(linhaSplit[4])) {
+				finalizadoOk.add(linhaSplit[0] + ";" + linhaSplit[1] + ";" + linhaSplit[2] + ";" + linhaSplit[3] + ";" + linhaSplit[4] + ";" + linhaSplit[5]
+						+ ";" + linhaSplit[6] + ";" + linhaSplit[7] + ";" + linhaSplit[8] + ";" + linhaSplit[9]+ ";" + linhaSplit[10]);
+				cidade = linhaSplit[9];
+				}
+			}
+			finalizadoOk.add("0000;0000;0000;0000;0000;0000;0000;0000;" +lhSplit[2] + ";" + cidade + ";0000");
+		}
+		
+		
 
 	}
 

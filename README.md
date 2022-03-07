@@ -31,5 +31,16 @@ Elaborado um tutorial de utilização da aplicação web.
 
 ## 🧮Vamos falar do calculo🧮
 
-Valor de tabela motocicleta XYZ = R$ 16.000,00
-Escalonamento de comissão: 
+* Valor de tabela motocicleta XYZ = R$ 16.000,00.
+* Escalonamento de comissão: 5%, 3%, 2% e 1%.
+* Formas de pagamentos Cartão de Crédito, Duplicata e Cheque.
+* Fluxo de caixa descontado. -> Lógica para realizar no calculo utilizado.
+* Buscar o valor das vendas parceladas para o VP(Valor Presente).
+
+## 💻Pulo do gato💻
+
+Observar a class calcularVP
+[class calcularVP](https://github.com/escoobi/rondomotos/blob/master/eclipse-workspace/rondomotos/src/br/com/rondomotos/calcularVP.java)
+Utilizado a função Math.pow em um for.
+
+

@@ -2,9 +2,9 @@
 
 ## ⚠️Problemática⚠️
 
-* A forma de comissionamento dos funcionários foi reformulada e incluinda escalonamento por quantidade de vendas e descontos concedidos aos clientes.
-* No comissionamento antigo a empresa absorvia os custos com taxas de cartão de crédito.
-* As vendas realizadas abaixo do valor de tabela, ou seja, com desconto concedito a empresa também deixava de arrecadar.
+* A forma de comissionamento dos funcionários foi reformulada e incluida escalonamento por quantidade de vendas e descontos concedidos aos clientes.
+* No comissionamento anterior a empresa absorvia os custos com taxas de cartão de crédito.
+* As vendas realizadas abaixo do valor de tabela, ou seja, com desconto concedido e a empresa também deixava de arrecadar.
 * Força o faturamento de motocicletas no valor de tabela ou acima.
 * Os colaboradores do setor de faturamento de cada loja, ao virar o mês realizava o preenchimento de uma planilha no excel e gerava as comissões da vendas.
 * Os colaborares encaminha um email para o departameto de RH da matriz com o anexo a planilha com a comissão.
@@ -19,8 +19,8 @@ Desenvolver uma aplicação ao qual processa os dois relatórios gerados pelo DM
 * Relatório de faturamento mensal
 * Relatório de vendas mensal
 
-E gerar a comissão das vendas das motocicletas automaticas.
-Elaborado um tutorial de utilização da aplicação web.
+Gerar a comissão das vendas das motocicletas automaticas.
+Elaborar um tutorial de utilização da aplicação web.
 
 ## 👨‍💻Tecnologia utilizadas👨‍💻
 
